@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>我的第一个PHP程式</title>
+	</head>
+	<body>
+	<?php
+	echo("hello world");
+	phpinfo();	
+	
+	?>
+
+	</body>
+
+</html>
