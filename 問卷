@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>手機問卷</title>  手機問卷<br><br>
+  </head>
+  <body>
+    <from>
+		姓&nbsp;&nbsp;&nbsp;名 : <input type= 'test' name= 'username' size= '40'><br>
+		
+		E-mail : <input type= 'test' name= 'usermail' size= '40' value= 'username@mailserver'><br>
+			
+		年&nbsp;&nbsp;齡 :
+		<input type= 'radio' name= 'userAge' value= 'Age1'> 年齡0-20   /*圓形選項，選擇鈕*/
+		<input type= 'radio' name= 'userAge' value= 'Age2'> 年齡21-30
+		<input type= 'radio' name= 'userAge' value= 'Age3'> 年齡31-40
+		<input type= 'radio' name= 'userAge' value= 'Age4'> 年齡41-999 <br>
+		
+		使用過甚麼手機? <br>
+		<input type= 'checkbox' name= 'userPhone' value= 'Phone1'> Iphone  /*方形選項，核取方塊*/
+		<input type= 'checkbox' name= 'userPhone' value= 'Phone2'> Sansung
+		
+		使用手機常碰到甚麼問題? <br>
+		<textarea name= 'userTroble' cols='45' rows= '4'></textarea><br>
+		
+		使用過那些電信業者門號?
+		<select name= 'userNumber' size= '3' multiple>   /*multiple 表示可以選擇多個項目*/
+		<option value= '台哥大'>台哥大
+		<option value= '中華電信'>中華電信
+		<option value= '遠傳'>遠傳
+		</select> <br><br>
+		
+		<input type= 'file' name= 'userfile' value= '上傳檔案'> <br>
+		<input type= 'image' name= 'userimage' value= '圖片提交' >
+		
+		
+		<br><br>
+		<input type= 'submit' value= '提交'>
+		<input type= 'reset' value= '重新輸入'>
+		
+	</from>
+  </body>
+</html>
