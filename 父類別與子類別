@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>父類別與子類別</title>  父類別與子類別<br><br>
+  </head>
+  <body>
+    <?php
+	
+	class Payroll   /*定義類別Payroll*/
+	{
+				public function Payment ($Hours, $PayRate)  /*定義函數 Payment*/
+		{
+			return $Hours  * $PayRate;
+		}
+	}
+	
+	class BonusPayroll extends Payroll /*子類別BonusPayroll覆蓋 父類別Payroll*/
+	{
+		public function Payment ($Hours, $PayRate) /*新 函數Payment*/
+		{
+			return $Hours  * $PayRate + 5000;  /*設定條件*/
+		}
+	}
+	
+	$b1 = new Payroll();
+	$b2 = new BonusPayroll();
+	echo '原始'.$b1 -> Payment(100,80).'<br>';    /*父類別結果*/
+	echo '加薪'.$b2 -> Payment(100,80).'<br>';    /*子類別結果*/
+	
+  ?>
+  </body>
+</html>
