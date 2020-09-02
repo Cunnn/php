@@ -7,11 +7,10 @@
 	<body>
 	<?php
 	
-	echo("hello world");   #echo = 
+	echo("hello world");   #echo = print，輸出結果
 	phpinfo();	
 	
 	?>
 
 	</body>
-
 </html>
